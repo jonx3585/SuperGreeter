@@ -2,7 +2,6 @@ import  java.util.Scanner;
 public class SuperGreeter {
 
     public static void main(String[] args) {
-        String name;
         SuperGreeter sg = new SuperGreeter();
         sg.start();
         sg.greet();
