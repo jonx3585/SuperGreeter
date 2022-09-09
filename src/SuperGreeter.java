@@ -5,6 +5,8 @@ public class SuperGreeter {
         String name;
         SuperGreeter sg = new SuperGreeter();
         sg.start();
+        sg.greet();
+        sg.askAboutAge();
     }
     public void start() {
         System.out.println("Det virker!");
@@ -12,7 +14,19 @@ public class SuperGreeter {
 
     public void greet(){
         Scanner sc = new Scanner(System.in);
+        System.out.println("Skiv dit navn!");
         String name = sc.nextLine();
+        System.out.println("Hej " + name);
+    }
+
+    public int askAboutAge(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Skiv din alder");
+        int age = sc.nextInt();
+
+        return age;
+
+
     }
 
 }
