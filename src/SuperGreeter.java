@@ -6,7 +6,7 @@ public class SuperGreeter {
         SuperGreeter sg = new SuperGreeter();
         sg.start();
         sg.greet();
-        sg.askAboutAge();
+
     }
     public void start() {
         System.out.println("Det virker!");
@@ -19,14 +19,9 @@ public class SuperGreeter {
         System.out.println("Hej " + name);
     }
 
-    public int askAboutAge(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Skiv din alder");
-        int age = sc.nextInt();
-
-        return age;
 
 
-    }
+
+
 
 }
